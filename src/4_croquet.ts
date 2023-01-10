@@ -38,16 +38,16 @@ export function playCroquet(): void {
 			// 💡 Remember TypeScript only exists at compile time, so when this code *runs* the type we want (Ball)
 			// should appear to be a string with value 'Hedgehog'.
 			// ⚠️ Unlike strongly typed languages, there's no such thing as `typeof Ball` in JavaScript.
-			//if (typeof ball === 'string') {
+			
 				if (ball === 'Hedgehog') score += 50;
-			//}
+			
 
 			// 💡 Remember TypeScript only exists at compile time, so when this code *runs* the type we want (Mallet)
 			// should appear to be a string with value 'Flamingo'
 			// ⚠️ Unlike strongly typed languages, there's no such thing as `typeof Mallet` in JavaScript.
-			//if (typeof mallet === 'string') {
+			
 				if (mallet === 'Flamingo') score += 50;
-			//}
+			
 
 			return score === 100;
 		},
