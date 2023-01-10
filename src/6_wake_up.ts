@@ -46,5 +46,11 @@ export function wakeUp(): void {
 
 function tryToWakeUp(): WakeUp {
 	// 👉 FIXME ❌
-	return {};
+
+	const myWakeUpFromDeepSleep : WakeUpFromDeepSleep = {canWake:"Yes"};
+	const myWakeUpFromREMSleep : WakeUpFromREMSleep = {wake: myWakeUpFromDeepSleep };
+	const myWakeUpFromDream : WakeUpFromDream = {wake: myWakeUpFromREMSleep };
+	const myWakeUp : WakeUp = {wake: myWakeUpFromDream };
+
+	return myWakeUp;
 }
