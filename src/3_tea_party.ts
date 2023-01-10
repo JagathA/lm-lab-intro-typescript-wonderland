@@ -21,7 +21,14 @@ type Table = {
 
 function setTheTable(): Table {
 	// 👉 FIXME ❌
-	return { seats: [] };
+	const teaDrink : Drink = {
+		type : drinks[1],
+		poured : true,
+	};
+
+	const teaSeat : Seat = {drink:teaDrink};
+	
+	return { seats: [teaSeat, teaSeat, teaSeat] };
 }
 
 export function attendATeaParty() {
